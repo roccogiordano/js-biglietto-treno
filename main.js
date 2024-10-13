@@ -23,3 +23,7 @@ else if (age > 65) {
 else {
     price = kmPrice * distance
 }
+
+price = Math.round(price * 100) / 100
+
+window.alert(`Il prezzo del tuo biglietto è di ${price}\u20AC`)
