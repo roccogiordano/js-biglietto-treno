@@ -14,3 +14,12 @@ while (isNaN(age)) {
     age = Number(prompt("Inserisci un'età valida!"))
 }
 
+if (age < 18) {
+    price = kmPrice * distance / 100 * 80
+}
+else if (age > 65) {
+    price = kmPrice * distance / 100 * 60
+}
+else {
+    price = kmPrice * distance
+}
