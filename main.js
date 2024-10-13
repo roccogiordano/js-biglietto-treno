@@ -4,13 +4,13 @@ let price;
 
 let distance = Number(prompt("Inserisci il numero di KM da percorrere"));
 
-while (isNaN(distance)) {
+while (isNaN(distance) || distance === 0) {
     distance = Number(prompt("Inserisci una distanza valida!"))
 }
 
 let age = Number(prompt("Inserisci l'età del viaggiatore"));
 
-while (isNaN(age)) {
+while (isNaN(age) || age === 0) {
     age = Number(prompt("Inserisci un'età valida!"))
 }
 
